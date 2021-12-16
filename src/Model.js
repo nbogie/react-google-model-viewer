@@ -9,7 +9,7 @@ function ModelToCache() {
         src="/submarinescene.glb"
         ios-src=""
         poster="http://placekitten.com/400/300?image=1"
-        alt="A 3D model of an astronaut"
+        alt="A 3D model of lions in a submarine, on safari"
         shadow-intensity="1"
         camera-controls
         auto-rotate

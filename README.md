@@ -1,3 +1,16 @@
+# Simplest demo of React app with Google Model Viewer
+
+[Google Model Viewer](https://modelviewer.dev/) shows a 3d model in the web page.
+
+It has orbit controls allowing the user to change the camera angle and zoom.
+
+The only thing of note in this React integration is that we've tried to avoid having the react component re-render the model viewer.
+(clicking the counter causes the parent to re-render, but you should note in the console.log that this doesn't cause the model to be re-rendered).
+
+This may be unnecessary, given React's reconciliation step would see two identical trees from one render of the model-viewer component to the next and skip the replacement, anyway.
+
+This project was created with create react app, so...
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
