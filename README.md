@@ -1,5 +1,8 @@
 # Simplest demo of React app with Google Model Viewer
 
+![lions in a submarine](public/sub.png?raw=true)
+
+
 [Google Model Viewer](https://modelviewer.dev/) shows a 3d model in the web page.
 
 It has orbit controls allowing the user to change the camera angle and zoom.
