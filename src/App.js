@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Model from "./Model";
+import React, { useState } from "react";
+export default function App() {
+  const [counter, setCounter] = useState(0);
 
-function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Simplest demo of google model-viewer in a react app</h1>
+      Click the button to cause the parent component to re-render. This must not
+      cause the model-viewer component to re-render.
+      <br />
+      <br />
+      <button onClick={() => setCounter((prev) => prev + 1)}>
+        Counter {counter}
+      </button>
+      <Model />
+      Model should be shown above.
     </div>
   );
 }
-
-export default App;
